@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             // form field with an error.
             focusView!!.requestFocus()
         } else {
-            val intent = Intent(Intent.ACTION_SEND, Uri.parse("area-investigation://"))
+            val intent = Intent(Intent.ACTION_SEND, Uri.parse("region-investigation://"))
             intent.putExtra("USERNAME", username.text.toString())
             intent.putExtra("ORG_NAME", org_name.text.toString())
             intent.putExtra("ORG_CODE", org_code.text.toString())
